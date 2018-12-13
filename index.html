@@ -2,8 +2,35 @@
 
 <head>
 <script>
-        function voegIemandToe()
+    
+    function myFilterFunction()
 {
+
+    var input, filter, ul, li, a, i, txtValue;
+input = document.getElementById("myFilterBox");        
+filter = input.value.toUpperCase();
+ 
+  ul = document.getElementById("myList");
+  li = ul.getElementsByTagName('li');
+   
+        
+for (i = 0; i < li.length; i++) {
+    txtValue = li[i].innerHTML;
+
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+li[i].style.display = "";
+} else {
+ li[i].style.display = "none";
+
+    }
+  }
+}
+    
+    function voegIemandToe()
+    
+    {
+    
+    
 var node = document.createElement("LI");
 var sNaam = document.getElementById("myNewName").value;                                       // Create a <li> node
 var textnode = document.createTextNode(sNaam);            // Create a text node
@@ -11,7 +38,8 @@ node.appendChild(textnode);                               // Append the text to 
 document.getElementById("myList").appendChild(node);      // Append <li> to <ul> with id="myList"    
     
 }
-
+    
+    
 </script>
 </head>
 
@@ -19,11 +47,13 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     
 <body>
 
+
+<input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="New...">
 <input id="myNewName" type="text " placeholder="New...">
 <button onclick="voegIemandToe();">Add</button>
                       
     <ul id="myList">
-<li>Floriss</li>        
+<li>Floris</li>        
 <li>Kees</li>
 <li>Jan</li>
            
