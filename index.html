@@ -1,7 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-<script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>AdressBook</title>
+  </head>
+  <body>
+
+   <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">AdressBook</h1>
+    <p class="lead">This is a list of everyone from CodeGorilla in Enschede</p>
+    <img src="img/CodeGorilla.png">
+  </div>
+</div>
+   
+   
+  </body>
+
+<!-- Equal width cols, same on all screen sizes -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+      
+      
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
     
     function myFilterFunction()
 {
@@ -29,7 +70,7 @@ li[i].style.display = "";
     function voegIemandToe()
     
     {
-    
+        
     
 var node = document.createElement("LI");
 var sNaam = document.getElementById("myNewName").value;                                       // Create a <li> node
@@ -39,26 +80,235 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     
 }
     
-    
 </script>
-</head>
-
-<html>
     
-<body>
-
-
-<input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="New...">
-<input id="myNewName" type="text " placeholder="New...">
+<input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Search contacts">
+<input id="myNewName" type="text " placeholder="New contact">
 <button onclick="voegIemandToe();">Add</button>
                       
-    <ul id="myList">
-<li>Floris</li>        
-<li>Kees</li>
-<li>Jan</li>
-           
-    </ul>
-          
-</body>    
+    <ul id="myList"> 
 
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Anke Ebbelink</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+ 
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Bart Brinks</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+ 
+ <li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Clemens Jongma</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+ 
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Calvin </h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Constant Zwijnenberg</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Cris Adamus</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Chelan Keijzer</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Douglas Bowman</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Jack Sleebos</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Jan-Willem Haeke</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Jeroen Wichers</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Martijn Blokhuis</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Maha Almasri</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Marcella Hadderingh</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Rene Spijker</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Richard Alp</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Simone Wildenborg</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
+  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Stas Sinyakov</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+     </ul>
+   
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
