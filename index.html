@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>AdressBook</title>
   </head>
@@ -16,31 +17,14 @@
   <div class="container">
     <h1 class="display-4">AdressBook</h1>
     <p class="lead">This is a list of everyone from CodeGorilla in Enschede</p>
-    <img src="img/CodeGorilla.png">
+   <img src="img/CodeGorilla.png" alt="CodeGorilla" class="imgcenter">
+    
+
   </div>
 </div>
    
    
   </body>
-
-<!-- Equal width cols, same on all screen sizes -->
-<div class="container">
-  <div class="row">
-    <div class="col">
-      
-      
-      
-    </div>
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      1 of 3
-    </div>
-  </div>
-</div>
-
-
 
   <script>
     
@@ -89,7 +73,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     <ul id="myList"> 
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Anke Ebbelink</h4>
     <p class="card-text">
@@ -99,9 +82,20 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     <a href="#!" class="btn btn-primary">More Info</a>
   </div>
 </div></li>
- 
+
+
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Bart Brinks</h4>
+    <p class="card-text">
+      Some quick example text to build on the card title
+      and make up the bulk of the card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">More Info</a>
+  </div>
+</div></li>
+
+<li><div class="card">
   <div class="card-body">
     <h4 class="card-title">Bart Brinks</h4>
     <p class="card-text">
@@ -112,8 +106,7 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
   </div>
 </div></li>
  
- <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+<li><div class="card">
   <div class="card-body">
     <h4 class="card-title">Clemens Jongma</h4>
     <p class="card-text">
@@ -122,12 +115,11 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     </p>
     <a href="#!" class="btn btn-primary">More Info</a>
   </div>
-</div></li>
+</div></li> 
  
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
-    <h4 class="card-title">Calvin </h4>
+    <h4 class="card-title">Contstant Zwijnenberg</h4>
     <p class="card-text">
       Some quick example text to build on the card title
       and make up the bulk of the card's content.
@@ -135,21 +127,8 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     <a href="#!" class="btn btn-primary">More Info</a>
   </div>
 </div></li>
-
-<li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
-  <div class="card-body">
-    <h4 class="card-title">Constant Zwijnenberg</h4>
-    <p class="card-text">
-      Some quick example text to build on the card title
-      and make up the bulk of the card's content.
-    </p>
-    <a href="#!" class="btn btn-primary">More Info</a>
-  </div>
-</div></li>
-
-<li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
+ 
+ <li><div class="card">
   <div class="card-body">
     <h4 class="card-title">Cris Adamus</h4>
     <p class="card-text">
@@ -159,9 +138,8 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     <a href="#!" class="btn btn-primary">More Info</a>
   </div>
 </div></li>
-
+ 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Chelan Keijzer</h4>
     <p class="card-text">
@@ -173,7 +151,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Douglas Bowman</h4>
     <p class="card-text">
@@ -185,7 +162,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Jack Sleebos</h4>
     <p class="card-text">
@@ -197,7 +173,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Jan-Willem Haeke</h4>
     <p class="card-text">
@@ -209,7 +184,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Jeroen Wichers</h4>
     <p class="card-text">
@@ -221,7 +195,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Martijn Blokhuis</h4>
     <p class="card-text">
@@ -233,7 +206,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Maha Almasri</h4>
     <p class="card-text">
@@ -245,7 +217,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Marcella Hadderingh</h4>
     <p class="card-text">
@@ -257,7 +228,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Rene Spijker</h4>
     <p class="card-text">
@@ -269,7 +239,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Richard Alp</h4>
     <p class="card-text">
@@ -281,7 +250,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Simone Wildenborg</h4>
     <p class="card-text">
@@ -293,7 +261,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 </div></li>
 
 <li><div class="card">
-  <img class="card-img-top" src="img/asesoramiento_juridico-318x100.jpg" alt="">
   <div class="card-body">
     <h4 class="card-title">Stas Sinyakov</h4>
     <p class="card-text">
@@ -303,7 +270,7 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
     <a href="#!" class="btn btn-primary">More Info</a>
   </div>
 </div></li>
-     </ul>
+
    
    
     <!-- Optional JavaScript -->
