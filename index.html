@@ -1,79 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
+ 
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="sript.js"></script>
+    
     <link rel="stylesheet" href="css/style.css">
-
-    <title>AdressBook</title>
   </head>
-  <body>
 
    <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">AdressBook</h1>
-    <p class="lead">This is a list of everyone from CodeGorilla in Enschede</p>
+    <p class="lead">This is the adressbook of CodeGorilla Enschede</p>
    <img src="img/CodeGorilla.png" alt="CodeGorilla" class="imgcenter">
-    
+   
+   <!-- Search contacts box
+======================================================== -->    
+<body>
+       
+  <div style="float:left">
+    <div id="Search">
+      <input id="myFilterBox" type="text" placeholder="Search contacts..." onkeyup="myFilterFunction();">
+      </div>
+    </div>
+  
+    <div style="float:right">
+      <div id="new">
+        <input id="myNewName" type="text" placeholder="New contact...">
+        </div>
+      </div>
+<div style="float:right">
+  <div style="text-align:center;">
+    <button type="button1" class="btn btn-square btn-success" onclick="voegIemandToe();">Nieuwe toevoegen</button>
 
+    </div>
+    </div>
+
+    </div>
+   
   </div>
 </div>
    
-   
-  </body>
+<!-- Add new contact button
+======================================================== -->    
 
-  <script>
-    
-    function myFilterFunction()
-{
 
-    var input, filter, ul, li, a, i, txtValue;
-input = document.getElementById("myFilterBox");        
-filter = input.value.toUpperCase();
- 
-  ul = document.getElementById("myList");
-  li = ul.getElementsByTagName('li');
-   
-        
-for (i = 0; i < li.length; i++) {
-    txtValue = li[i].innerHTML;
-
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-li[i].style.display = "";
-} else {
- li[i].style.display = "none";
-
-    }
-  }
-}
-    
-    function voegIemandToe()
-    
-    {
-        
-    
-var node = document.createElement("LI");
-var sNaam = document.getElementById("myNewName").value;                                       // Create a <li> node
-var textnode = document.createTextNode(sNaam);            // Create a text node
-node.appendChild(textnode);                               // Append the text to <li>
-document.getElementById("myList").appendChild(node);      // Append <li> to <ul> with id="myList"    
-    
-}
-    
-</script>
-
-    
-<input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Search contacts">
-<input id="myNewName" type="text " placeholder="New contact">
-
-<div style="text-align:center;">
-<button onclick="voegIemandToe();">Add</button>
-                      
-    <ul id="myList"> 
+                
+<!-- Contact list 
+======================================================== -->               
+<ul id="myList"> 
 
 <li><div class="card">
   <div class="card-body">
@@ -100,17 +80,6 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
 
 <li><div class="card">
   <div class="card-body">
-    <h4 class="card-title">Bart Brinks</h4>
-    <p class="card-text">
-      Some quick example text to build on the card title
-      and make up the bulk of the card's content.
-    </p>
-    <a href="#!" class="btn btn-primary">More Info</a>
-  </div>
-</div></li>
- 
-<li><div class="card">
-  <div class="card-body">
     <h4 class="card-title">Clemens Jongma</h4>
     <p class="card-text">
       Some quick example text to build on the card title
@@ -122,7 +91,7 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
  
 <li><div class="card">
   <div class="card-body">
-    <h4 class="card-title">Contstant Zwijnenberg</h4>
+    <h4 class="card-title">Constant Zwijnenberg</h4>
     <p class="card-text">
       Some quick example text to build on the card title
       and make up the bulk of the card's content.
@@ -274,11 +243,20 @@ document.getElementById("myList").appendChild(node);      // Append <li> to <ul>
   </div>
 </div></li>
 
-   
+
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+<footer>
+  <p>&copy;GoodPony</p>
+  <p>Contact information: <a href="mailto:blokhuis.m@gmai.com">
+  blokhuis.m@gmail.com</a>.</p>
+</footer>
+  
+</body>
+
 </html>
